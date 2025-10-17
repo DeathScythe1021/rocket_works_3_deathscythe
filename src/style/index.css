@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "./color.css";
+@import "./font.css";
+
+
+
+@layer components {
+  .section-width {
+    @apply flex flex-col lg:p-[42px] p-0;
+  }
+}
+
+/* 字 */
+@layer components {
+
+   
+    .text{
+       @apply font-light text-[var(--color-primary-400)] text-[16px];
+        font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+    }
+
+
+    .lebel-text{
+        @apply font-semibold text-[var(--color-primary-100)] text-[16px];
+        font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .name-text{
+       @apply font-light text-[var(--color-primary-400)] text-[20px];
+        font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+    }
+    .money-text{
+       @apply font-semibold text-[var(--color-primary-400)] text-[20px];
+        font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .btn-text{
+        @apply font-semibold text-[var(--color-primary-600)] text-[24px];
+        font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+
+    }
+
+    .h1-text{
+        @apply font-semibold text-[var(--color-primary-100)] text-[36px];
+        font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .h2-text{
+        @apply font-semibold text-[var(--color-primary-100)] text-[24px];
+        font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+
+    }
+
+    .footer-text{
+        @apply font-normal text-[var(--color-primary-600)] text-[16px];
+        font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+
+    }
+
+   .font-times {
+    @apply font-normal text-[var(--color-primary-600)] text-[16px];
+    font-family: 'Times New Roman', serif;
+    }
+
+
+    /* .headline{
+        @apply 
+    } */
+
+
+
+
+}

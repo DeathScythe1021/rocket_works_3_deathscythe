@@ -1,0 +1,10 @@
+@theme{
+    /* 綠色 */
+    --color-primary-100:#EAF0ED; 
+    --color-primary-400:#8DA291;
+    --color-primary-600:#3F5D45;
+    --color-primary-700:#2C4832;
+    /* 黃色 */
+    --color-secondary-200:#FFE180;
+
+}
