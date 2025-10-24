@@ -60,7 +60,7 @@ function ShoppingPage() {
           </div>
         </div>
       </div>
-      <Button variant="secondary">結帳</Button>
+      <Button variants="secondary">結帳</Button>
       </section>
       </div>
     </main>
