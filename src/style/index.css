@@ -63,11 +63,17 @@
     }
 
 
-    /* .headline{
-        @apply 
-    } */
+    .headline{
+        @apply font-bold inline-block leading-12 tracking-wide text-[24px] text-[var(--color-primary-600)] ;
+        writing-mode: vertical-rl;     /* 垂直書寫方向 */
+        text-orientation: upright;     /* 每個字保持正立 */
+        line-height: 1;
+        font-family: "Noto Serif TC", serif;
+    }
 
-
-
-
+     .headline-2{
+        @apply font-bold inline-block leading-12 tracking-wide text-[45px] text-[var(--color-primary-600)] ;
+        line-height: 1;
+        font-family: "Noto Serif TC", serif;
+    }
 }
