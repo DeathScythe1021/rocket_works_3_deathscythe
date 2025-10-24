@@ -52,15 +52,15 @@ function InvoicePage() {
             {/* 個資 */}
             <div className="flex flex-col gap-4">
               <div className="flex flex-col w-full gap-2">
-                <p className="money-text text-white">信用卡卡號</p>
+                <p className="money-text text-white">電子信箱郵件</p>
                 <div className="flex justify-between text w-full py-[17px] px-[20px] bg-primary-100 text-primary-400">
-                  <p>9012-3456-7890-1234</p>
+                  <p>example@email.com</p>
                 </div>
               </div>
               <div className="flex flex-col w-full gap-2">
-                <p className="money-text text-white">信用卡卡號</p>
+                <p className="money-text text-white">統一編號（選填）</p>
                 <div className="flex justify-between text w-full py-[17px] px-[20px] bg-primary-100 text-primary-400">
-                  <p>9012-3456-7890-1234</p>
+                  <p>12345678</p>
                 </div>
               </div>
             
