@@ -34,7 +34,7 @@ export default function LoginPage() {
                     
                 </div>
                 <div className='flex gap-2 justify-start items-center'>
-                    <div className='w-4 h-4 bg-white'></div>
+                    <input type="checkbox" className='w-4 h-4 accent-white'/>
                     <p className='lebel-text text-white'>記住我</p>
                 </div>
             </div>

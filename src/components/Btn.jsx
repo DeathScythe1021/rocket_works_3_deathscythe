@@ -9,7 +9,7 @@ export default function Button({
 }) {
 
     // 共同樣式
-  const baseStyles = " btn-text text-primary-700";
+  const baseStyles = "cursor-pointer btn-text text-primary-700";
 
   // 定義不同 variant 的 Tailwind class
   const variants = {
@@ -25,7 +25,7 @@ export default function Button({
       onClick={onClick}
       disabled={disabled}
       className={`
-        ${className}
+        ${baseStyles}
         flex justify-center items-center btn-text py-4 w-full h-[65px]
         ${variants[variant] || variants.primary} 
       `}
