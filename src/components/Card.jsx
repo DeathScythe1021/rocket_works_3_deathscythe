@@ -1,17 +1,31 @@
+import { useNavigate } from "react-router-dom";
 import Button from "./Btn.jsx";
 import heart from "../assets/images/favorite_border.png";
 
 export default function Card({ title, subtitle, img }) {
+
+
+  const navigate = useNavigate();
+  // 頁面跳轉
+
+  const handleClick = () => {
+    navigate("/shopping"); 
+  };
+
   return (
     <>
+
       <div className="flex flex-col justify-center lg:w-[300px] w-[315px]">
-        <div className="flex flex-col justify-start lg:w-[300px] w-[315px] h-[315px] lg:h-[300px]"
-          style={{
-            backgroundImage: `url(${img})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
+        <div
+    onClick={handleClick}
+    className="flex flex-col justify-between items-start lg:w-[300px] w-[315px] h-[315px] lg:h-[300px]"
+    style={{
+      backgroundImage: `url(${img})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+  >
+
           <div className="w-full  flex justify-between items-start pl-[21px] pr-[24.2px]">
             <div className=" [writing-mode:vertical-rl] [text-orientation:upright] tracking-[0.25rem]  lebel-text bg-primary-600 px-[10px] py-[10.5px]">
               本日精選
@@ -40,7 +54,7 @@ export default function Card({ title, subtitle, img }) {
           </div>
        
 
-        <Button variant="primary">加入購物車</Button>
+        <Button variant="primary" onClick={handleClick} >加入購物車</Button>
       </div>
     </>
   );

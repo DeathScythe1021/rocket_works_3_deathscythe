@@ -98,7 +98,7 @@ export default function HomePage() {
         </div>
       </section>
       {/* 卡片 */}
-      <section className="w-full lg:pb-[42px] overflow-x-auto flex lg:justify-center justify-start ">
+      <section className="w-full lg:pb-[42px] overflow-x-auto flex lg:justify-center justify-start pb-[30px]">
         <div className="flex justify-between gap-5 lg:px-13 px-[30px] whitespace-nowrap">
           {/* 甜點卡片列表 */}
 
