@@ -21,7 +21,7 @@ export default function Footer() {
               <img src={mailImg} alt="mail" className="h-6 w-6" />
             </div>
 
-            <div className="flex h-[64px] w-[56px] bg-secondary-200 hover:bg-primary-400 items-center justify-center">
+            <div className="flex h-[64px] w-[56px] bg-secondary-200 hover:bg-secondary-400 items-center justify-center">
               <img src={enterImg} alt="enter" className="" />
             </div>
           </div>
