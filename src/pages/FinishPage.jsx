@@ -1,7 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import React from "react";
 import Button from "../components/Btn";
 
 function FinishPage() {
+  const navigate = useNavigate();
+  // 頁面跳轉
+
+  const handleClick = () => {
+    navigate("/products"); 
+  };
   return (
     <main className="flex flex-col justify-center items-center lg:px-[42px] w-full h-[583px] lg:h-[518px] lg:py-[210px]">
       <div className="flex flex-col justify-center items-center lg:gap-8 lg:py-[168px] lg:px-[375px] bg-[url('../assets/images/banner.avif')] bg-cover bg-center w-full  lg:w-[940px] h-[518px] lg:h-[460px]">
@@ -46,11 +53,11 @@ function FinishPage() {
           </div>
           
           
-          <Button variant="secondary" className="hidden lg:flex">繼續逛逛</Button>
+          <Button variant="secondary" onClick={handleClick} special="hidden lg:flex ">繼續逛逛</Button>
         </div>
         
       </div>
-       <Button variant="secondary" className="flex lg:hidden">繼續逛逛</Button>
+       <Button variant="secondary" onClick={handleClick} special="flex lg:hidden" >繼續逛逛</Button>
     </main>
   );
 }

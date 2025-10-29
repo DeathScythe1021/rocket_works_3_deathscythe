@@ -16,16 +16,26 @@ export default function Footer() {
             <h2 className="h2-text font-normal">訂閱你我的甜蜜郵件</h2>
           </div>
           {/* 信箱輸入欄 */}
-          <div className="flex bg-primary-100  max-w-[380px] w-full justify-between items-center">
-            <div className="flex h-[64px] w-[56px]  items-center justify-center">
-              <img src={mailImg} alt="mail" className="h-6 w-6" />
+          <div className="flex bg-primary-100 max-w-[380px] w-full justify-between items-center">
             </div>
+  {/* 左邊圖示 */}
+  <div className="flex h-[64px] w-[56px] items-center justify-center">
+    <img src={mailImg} alt="mail" className="h-6 w-6" />
+  </div>
 
-            <div className="flex h-[64px] w-[56px] bg-secondary-200 hover:bg-secondary-400 items-center justify-center">
-              <img src={enterImg} alt="enter" className="" />
-            </div>
-          </div>
-        </div>
+  {/* 中間輸入框 */}
+  <input
+    type="text"
+    placeholder="輸入內容"
+    className="flex-1 h-[64px] bg-transparent outline-none px-4 text-primary-600 placeholder-primary-400"
+  />
+
+  {/* 右邊按鈕 */}
+  <div className="flex h-[64px] w-[56px] bg-secondary-200 hover:bg-secondary-400 items-center justify-center cursor-pointer">
+    <img src={enterImg} alt="enter" className="h-6 w-6" />
+  </div>
+</div>
+
         {/* 淺色區塊 */}
         <div className="flex flex-col justify-between gap-[30px] lg:px-[122px] px-[30px] py-[39px] bg-primary-100 ">
         <div className="flex w-full lg:justify-between ">
