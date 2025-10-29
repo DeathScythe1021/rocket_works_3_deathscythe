@@ -9,7 +9,9 @@ import LoginPage from './pages/LoginPage.jsx'
 import ShippingPage from './pages/Shipping.jsx'
 import FinishPage from './pages/FinishPage.jsx'
 import PayPage from './pages/PayPage.jsx'
-import InvoicePage from './pages/Invoice.jsx'
+import InvoicePage from './pages/InvoicePage.jsx'
+import HomePage from './pages/HomePage.jsx'
+import HomeCard from './components/HomeCard.jsx'
 
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -19,7 +21,7 @@ function App() {
     <>
     
       <Navbar />
-      <InvoicePage />
+      <LoginPage />
       <Footer />
     
     </>
