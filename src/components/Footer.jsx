@@ -17,6 +17,7 @@ export default function Footer() {
           </div>
           {/* 信箱輸入欄 */}
           <div className="flex bg-primary-100 max-w-[380px] w-full justify-between items-center">
+            </div>
   {/* 左邊圖示 */}
   <div className="flex h-[64px] w-[56px] items-center justify-center">
     <img src={mailImg} alt="mail" className="h-6 w-6" />
